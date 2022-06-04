@@ -5,7 +5,7 @@ import {
 	redisPassword,
 	redisPort,
 	redisUsername,
-} from "@template/server";
+} from "@better-semplan/server";
 import Redis from "ioredis";
 import { SearchOptions } from "./types";
 

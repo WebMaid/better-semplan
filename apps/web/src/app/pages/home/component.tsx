@@ -1,6 +1,6 @@
 import { Button } from "@mantine/core";
-import { showSuccess, useShowPending } from "@template/ui";
-import { useLoginUserMutation } from "@template/client";
+import { showSuccess, useShowPending } from "@better-semplan/ui";
+import { useLoginUserMutation } from "@better-semplan/client";
 
 export const HomePageComponent = () => {
 	const [login] = useLoginUserMutation();

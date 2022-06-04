@@ -2,7 +2,7 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, Menu, useMantineTheme } from "@mantine/core";
 import { useTranslation } from "react-i18next";
-import { LanguageContext, languages } from "@template/main";
+import { LanguageContext, languages } from "@better-semplan/main";
 import { useContext } from "react";
 
 export const LanguageSelectionComponent = () => {
@@ -14,9 +14,7 @@ export const LanguageSelectionComponent = () => {
 			control={
 				<Button
 					color='gray'
-					variant={
-						theme.colorScheme === "dark" ? "default" : "outline"
-					}
+					variant={theme.colorScheme === "dark" ? "default" : "outline"}
 					leftIcon={<FontAwesomeIcon icon={faGlobe} />}
 				>
 					{t(`language.${language}.short`)}

@@ -8,7 +8,7 @@ import {
 	UnstyledButton,
 	useMantineTheme,
 } from "@mantine/core";
-import { AuthContext } from "@template/client";
+import { AuthContext } from "@better-semplan/client";
 import { useContext } from "react";
 import { IndexProps } from ".";
 import { UINavbarLink } from "./item";

@@ -1,4 +1,4 @@
-import { refreshTokenCookieKey } from "@template/core";
+import { refreshTokenCookieKey } from "@better-semplan/core";
 import React, { createContext, useEffect, useState } from "react";
 import {
 	ListenAuthChangesDocument,

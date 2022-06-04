@@ -32,7 +32,7 @@ export const LanguageProvider = ({ children }: ProviderProps) => {
 
 	useEffect(() => {
 		changeLanguage(language);
-	});
+	}, []);
 
 	return (
 		<LanguageContext.Provider

@@ -1,7 +1,7 @@
 {
-	"name": "@template/main",
+	"name": "@better-semplan/main",
 	"version": "1.0.0",
-	"description": "Template Main libary",
+	"description": "Better Semplan Main libary",
 	"main": "index.ts",
 	"author": "Webmaid",
 	"license": "MIT",

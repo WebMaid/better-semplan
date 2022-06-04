@@ -1,4 +1,4 @@
-import { refreshTokenCookieKey } from "@template/core";
+import { refreshTokenCookieKey } from "@better-semplan/core";
 import { Response } from "express";
 import { User } from "../../entities/User";
 import { generateRefreshToken } from "./generateRefreshToken";

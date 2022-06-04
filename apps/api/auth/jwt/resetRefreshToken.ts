@@ -1,4 +1,4 @@
-import { refreshTokenCookieKey } from "@template/core";
+import { refreshTokenCookieKey } from "@better-semplan/core";
 import { Response } from "express";
 
 export const resetRefreshToken = (res: Response) => {

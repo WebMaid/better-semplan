@@ -1,9 +1,9 @@
 {
-  "name": "@template/server",
-  "version": "1.0.0",
-  "description": "Template Server Libary",
-  "main": "index.ts",
-  "author": "Webmaid",
-  "license": "MIT",
-  "private": true
+	"name": "@better-semplan/server",
+	"version": "1.0.0",
+	"description": "Better Semplan Server Libary",
+	"main": "index.ts",
+	"author": "Webmaid",
+	"license": "MIT",
+	"private": true
 }

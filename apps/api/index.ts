@@ -6,7 +6,7 @@ import { buildSchema } from "type-graphql";
 import { createConnection } from "typeorm";
 import "dotenv/config";
 import "reflect-metadata";
-import { serverPort } from "@template/core";
+import { serverPort } from "@better-semplan/core";
 import { addEndpoints } from "./endpoints";
 import { resolvers } from "./resolvers";
 import { corsSettings } from "./utils/corsSettings";

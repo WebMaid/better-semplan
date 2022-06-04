@@ -1,4 +1,4 @@
-import { refreshTokenRoute } from "@template/core";
+import { refreshTokenRoute } from "@better-semplan/core";
 import express, { Express } from "express";
 import { addHealthEndpoints } from "./health";
 import { refreshTokenEndpoint } from "./refresh-token";

@@ -3,7 +3,7 @@ import { PostgresConnectionOptions } from "typeorm/driver/postgres/PostgresConne
 export const ormConfig: PostgresConnectionOptions = {
 	type: "postgres",
 	host: "localhost",
-	database: "enterprise-tools",
+	database: "better-semplan",
 	port: 5432,
 	username: process.env.DATABASE_USERNAME,
 	password: process.env.DATABASE_PASSWORD,

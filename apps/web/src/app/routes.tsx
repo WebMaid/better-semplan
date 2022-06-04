@@ -1,5 +1,9 @@
-import { UIAppShell } from "@template/ui";
-import { BrowserRouter, Route, Routes } from "@template/ui/router";
+import { UIAppShell } from "@better-semplan/ui";
+import {
+	BrowserRouter,
+	Route,
+	Routes,
+} from "@better-semplan/ui/shared/react-router-dom";
 import { navbarItems } from "./navbarItems";
 import { HomePage } from "./pages/home";
 import { UserLoginPage } from "./pages/user/login";

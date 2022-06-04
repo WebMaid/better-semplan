@@ -1,5 +1,5 @@
 {
-	"name": "@template/example",
+	"name": "@better-semplan/web",
 	"version": "1.0.0",
 	"private": true,
 	"dependencies": {
@@ -17,8 +17,8 @@
 		"@mantine/prism": "^4.1.4",
 		"@mantine/rte": "^4.1.4",
 		"@mantine/spotlight": "^4.1.4",
-		"@template/client": "1.0.0",
-		"@template/ui": "1.0.0",
+		"@better-semplan/client": "1.0.0",
+		"@better-semplan/ui": "1.0.0",
 		"dayjs": "^1.11.1",
 		"graphql-ws": "^5.7.0",
 		"react": "^18.0.0",

@@ -3,7 +3,7 @@ import {
 	getClientId,
 	setAccessToken,
 	useLogoutUserMutation,
-} from "@template/client";
+} from "@better-semplan/client";
 import { useContext } from "react";
 import { useTranslation } from "react-i18next";
 import { showError, showSuccess } from "../../../../..";

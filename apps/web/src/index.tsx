@@ -1,7 +1,7 @@
-import { AuthProvider, DefaultApolloProvider } from "@template/client";
-import { LanguageProvider } from "@template/main";
-import "@template/main/translations/i18n";
-import { UIProvider } from "@template/ui";
+import { AuthProvider, DefaultApolloProvider } from "@better-semplan/client";
+import { LanguageProvider } from "@better-semplan/main";
+import "@better-semplan/main/translations/i18n";
+import { UIProvider } from "@better-semplan/ui";
 import React from "react";
 import { createRoot } from "react-dom/client";
 import { App } from "./app";

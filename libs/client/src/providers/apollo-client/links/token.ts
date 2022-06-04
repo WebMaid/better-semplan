@@ -5,7 +5,7 @@ import {
 	refreshTokenMethod,
 	accessTokenField,
 	refreshTokenExpireWarning,
-} from "@template/core";
+} from "@better-semplan/core";
 import { jwtDecode } from "../../../utils";
 
 export const tokenRefreshLink: any = new TokenRefreshLink({

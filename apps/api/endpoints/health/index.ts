@@ -1,4 +1,4 @@
-import { healthDatabaseRoute } from "@template/core";
+import { healthDatabaseRoute } from "@better-semplan/core";
 import { Express } from "express";
 import { databaseHealthEndpoint } from "./database";
 

@@ -1,6 +1,6 @@
 import { ApolloClient, ApolloLink, HttpLink } from "@apollo/client";
 import { onError } from "@apollo/client/link/error";
-import { apiUrl } from "@template/core";
+import { apiUrl } from "@better-semplan/core";
 import { cache } from "./cache";
 import { splitLink } from "./links/split";
 import { tokenRefreshLink } from "./links/token";

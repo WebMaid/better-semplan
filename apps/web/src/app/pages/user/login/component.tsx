@@ -1,6 +1,10 @@
 import { faAt, faLock } from "@fortawesome/free-solid-svg-icons";
 import { Group } from "@mantine/core";
-import { UIPasswordInput, UIPrimaryButton, UITextInput } from "@template/ui";
+import {
+	UIPasswordInput,
+	UIPrimaryButton,
+	UITextInput,
+} from "@better-semplan/ui";
 import { useFormContext } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { IndexProps } from ".";

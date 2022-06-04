@@ -1,7 +1,7 @@
 {
-	"name": "@template/root",
+	"name": "@better-semplan/root",
 	"version": "1.0.0",
-	"description": "Monorepository Template",
+	"description": "Improved Semesterplan for School",
 	"author": "Meierschlumpf <meierschlumpf@gmail.com>",
 	"license": "MIT",
 	"private": true,

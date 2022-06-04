@@ -1,7 +1,7 @@
 {
-	"name": "@template/api",
+	"name": "@better-semplan/api",
 	"version": "1.0.0",
-	"description": "Template Api",
+	"description": "API for better-semplan",
 	"main": "index.ts",
 	"author": "Webmaid",
 	"license": "MIT",

@@ -2,9 +2,9 @@ import {
 	AuthContext,
 	getClientId,
 	useLoginUserMutation,
-} from "@template/client";
-import { showError, showSuccess } from "@template/ui";
-import { useNavigate } from "@template/ui/router";
+} from "@better-semplan/client";
+import { showError, showSuccess } from "@better-semplan/ui";
+import { useNavigate } from "@better-semplan/ui/shared/react-router-dom";
 import { useContext } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
