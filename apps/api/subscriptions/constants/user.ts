@@ -1,0 +1,1 @@
+export const USER_AUTH_CHANGE = "USER_AUTH_CHANGE";

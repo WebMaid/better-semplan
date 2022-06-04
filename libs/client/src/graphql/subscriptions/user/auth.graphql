@@ -1,0 +1,5 @@
+subscription ListenAuthChanges($clientId: Float!) {
+	listenAuthChanges(clientId: $clientId) {
+		authenticated
+	}
+}

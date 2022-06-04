@@ -1,0 +1,9 @@
+{
+  "name": "@template/server",
+  "version": "1.0.0",
+  "description": "Template Server Libary",
+  "main": "index.ts",
+  "author": "Webmaid",
+  "license": "MIT",
+  "private": true
+}

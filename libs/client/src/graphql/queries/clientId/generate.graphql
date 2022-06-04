@@ -1,0 +1,5 @@
+query GenerateClientId {
+	generateClientId {
+		clientId
+	}
+}

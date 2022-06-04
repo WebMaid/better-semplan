@@ -1,0 +1,58 @@
+{
+	"language": {
+		"en": {
+			"short": "EN",
+			"name": "English"
+		},
+		"de": {
+			"short": "DE",
+			"name": "German"
+		},
+		"fr": {
+			"short": "FR",
+			"name": "French"
+		}
+	},
+	"search": {
+		"title": "Search"
+	},
+	"user": {
+		"mail": {
+			"label": "Mail",
+			"placeholder": "Your Mail"
+		},
+		"password": {
+			"label": "Password"
+		},
+		"action": {
+			"login": "Login",
+			"logout": "Logout"
+		},
+		"notification": {
+			"login": {
+				"success": {
+					"title": "Login",
+					"message": "Login successfull"
+				},
+				"failure": {
+					"title": "Login",
+					"message": "Login failed"
+				}
+			},
+			"logout": {
+				"success": {
+					"title": "Logout",
+					"message": "Logout successfull"
+				},
+				"failure": {
+					"title": "Logout",
+					"message": "Logout failed"
+				}
+			}
+		}
+	},
+	"spotlight": {
+		"search": "Search...",
+		"none": "Nothing found!"
+	}
+}

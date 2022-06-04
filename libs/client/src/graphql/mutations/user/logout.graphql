@@ -1,0 +1,5 @@
+mutation LogoutUser($clientId: Float) {
+	logoutUser(clientId: $clientId) {
+		success
+	}
+}

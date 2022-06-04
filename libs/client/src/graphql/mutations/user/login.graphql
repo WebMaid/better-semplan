@@ -1,0 +1,5 @@
+mutation LoginUser($password: String!, $mail: String!, $clientId: Float) {
+	loginUser(password: $password, mail: $mail, clientId: $clientId) {
+		accessToken
+	}
+}

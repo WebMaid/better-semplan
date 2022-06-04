@@ -1,0 +1,29 @@
+{
+	"name": "@template/root",
+	"version": "1.0.0",
+	"description": "Monorepository Template",
+	"author": "Meierschlumpf <meierschlumpf@gmail.com>",
+	"license": "MIT",
+	"private": true,
+	"dependencies": {},
+	"devDependencies": {
+		"lerna": "^4.0.0",
+		"craco": "^0.0.3"
+	},
+	"workspaces": {
+		"packages": [
+			"apps/**",
+			"libs/**"
+		]
+	},
+	"jest": {
+		"preset": "ts-jest",
+		"testEnvironment": "node",
+		"transform": {
+			"node_modules/variables/.+\\.(j|t)sx?$": "ts-jest"
+		},
+		"transformIgnorePatterns": [
+			"node_modules/(?!variables/.*)"
+		]
+	}
+}
