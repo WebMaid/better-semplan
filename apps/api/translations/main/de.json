@@ -51,6 +51,20 @@
 			}
 		}
 	},
+	"teacher": {
+		"list": {
+			"title": "Lehrkräfte"
+		},
+		"properties": {
+			"fullName": "Name",
+			"hireDate": {
+				"label": "Einstellungsdatum"
+			},
+			"workLoad": {
+				"label": "Pensum"
+			}
+		}
+	},
 	"spotlight": {
 		"search": "Suchen...",
 		"none": "Nichts gefunden!"
