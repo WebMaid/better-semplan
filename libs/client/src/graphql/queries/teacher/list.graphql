@@ -1,0 +1,11 @@
+query GetTeacherList {
+	getTeacherList {
+		teachers {
+			id
+			firstname
+			lastname
+			workLoad
+			hireDate
+		}
+	}
+}

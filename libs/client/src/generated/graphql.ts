@@ -13,6 +13,8 @@ export type Scalars = {
   Boolean: boolean;
   Int: number;
   Float: number;
+  /** The javascript `Date` as string. Type represents date and time as the ISO Date string. */
+  DateTime: any;
 };
 
 export type ClientIdResponse = {
@@ -42,6 +44,7 @@ export type Query = {
   __typename?: 'Query';
   currentUser: UserGetCurrentResponse;
   generateClientId: ClientIdResponse;
+  getTeacherList: TeacherGetListResponse;
 };
 
 export type Subscription = {
@@ -52,6 +55,20 @@ export type Subscription = {
 
 export type SubscriptionListenAuthChangesArgs = {
   clientId: Scalars['Float'];
+};
+
+export type TeacherDto = {
+  __typename?: 'TeacherDto';
+  firstname?: Maybe<Scalars['String']>;
+  hireDate?: Maybe<Scalars['DateTime']>;
+  id: Scalars['ID'];
+  lastname?: Maybe<Scalars['String']>;
+  workLoad?: Maybe<Scalars['Float']>;
+};
+
+export type TeacherGetListResponse = {
+  __typename?: 'TeacherGetListResponse';
+  teachers?: Maybe<Array<TeacherDto>>;
 };
 
 export type UserAuthSubscriptionResponse = {
@@ -101,6 +118,11 @@ export type GenerateClientIdQueryVariables = Exact<{ [key: string]: never; }>;
 
 
 export type GenerateClientIdQuery = { __typename?: 'Query', generateClientId: { __typename?: 'ClientIdResponse', clientId: number } };
+
+export type GetTeacherListQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type GetTeacherListQuery = { __typename?: 'Query', getTeacherList: { __typename?: 'TeacherGetListResponse', teachers?: Array<{ __typename?: 'TeacherDto', id: string, firstname?: string | null, lastname?: string | null, workLoad?: number | null, hireDate?: any | null }> | null } };
 
 export type CurrentUserQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -217,6 +239,46 @@ export function useGenerateClientIdLazyQuery(baseOptions?: Apollo.LazyQueryHookO
 export type GenerateClientIdQueryHookResult = ReturnType<typeof useGenerateClientIdQuery>;
 export type GenerateClientIdLazyQueryHookResult = ReturnType<typeof useGenerateClientIdLazyQuery>;
 export type GenerateClientIdQueryResult = Apollo.QueryResult<GenerateClientIdQuery, GenerateClientIdQueryVariables>;
+export const GetTeacherListDocument = gql`
+    query GetTeacherList {
+  getTeacherList {
+    teachers {
+      id
+      firstname
+      lastname
+      workLoad
+      hireDate
+    }
+  }
+}
+    `;
+
+/**
+ * __useGetTeacherListQuery__
+ *
+ * To run a query within a React component, call `useGetTeacherListQuery` and pass it any options that fit your needs.
+ * When your component renders, `useGetTeacherListQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * you can use to render your UI.
+ *
+ * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
+ *
+ * @example
+ * const { data, loading, error } = useGetTeacherListQuery({
+ *   variables: {
+ *   },
+ * });
+ */
+export function useGetTeacherListQuery(baseOptions?: Apollo.QueryHookOptions<GetTeacherListQuery, GetTeacherListQueryVariables>) {
+        const options = {...defaultOptions, ...baseOptions}
+        return Apollo.useQuery<GetTeacherListQuery, GetTeacherListQueryVariables>(GetTeacherListDocument, options);
+      }
+export function useGetTeacherListLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<GetTeacherListQuery, GetTeacherListQueryVariables>) {
+          const options = {...defaultOptions, ...baseOptions}
+          return Apollo.useLazyQuery<GetTeacherListQuery, GetTeacherListQueryVariables>(GetTeacherListDocument, options);
+        }
+export type GetTeacherListQueryHookResult = ReturnType<typeof useGetTeacherListQuery>;
+export type GetTeacherListLazyQueryHookResult = ReturnType<typeof useGetTeacherListLazyQuery>;
+export type GetTeacherListQueryResult = Apollo.QueryResult<GetTeacherListQuery, GetTeacherListQueryVariables>;
 export const CurrentUserDocument = gql`
     query CurrentUser {
   currentUser {
