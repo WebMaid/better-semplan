@@ -1,3 +1,4 @@
+import { TeacherDto } from "@better-semplan/client";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Avatar, Group, Table, TextInput } from "@mantine/core";
@@ -5,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import { IndexProps } from ".";
 
 interface Props extends IndexProps {
-	teachers: any[];
+	teachers: TeacherDto[];
 }
 
 export const TeacherListPageComponent = ({ teachers }: Props) => {
